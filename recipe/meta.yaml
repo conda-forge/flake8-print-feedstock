@@ -1,6 +1,6 @@
 {% set name = "flake8-print" %}
-{% set version = "3.1.1" %}
-{% set sha256 = "3456804209b0420d443cfd6cfe115dad2b13ec72c9ef1171857b26b7412cc932" %}
+{% set version = "3.1.4" %}
+{% set sha256 = "324f9e59a522518daa2461bacd7f82da3c34eb26a4314c2a54bd493f8b394a68" %}
 
 package:
   name: {{ name|lower }}
