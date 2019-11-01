@@ -20,7 +20,7 @@ requirements:
   host:
     - python
     - pip
-    - poetry
+    - pytest-runner
   run:
     - python
     - flake8 >=2.1
