@@ -1,6 +1,6 @@
 {% set name = "flake8-print" %}
-{% set version = "3.1.4" %}
-{% set sha256 = "324f9e59a522518daa2461bacd7f82da3c34eb26a4314c2a54bd493f8b394a68" %}
+{% set version = "4.0.0" %}
+{% set sha256 = "5afac374b7dc49aac2c36d04b5eb1d746d72e6f5df75a6ecaecd99e9f79c6516" %}
 
 package:
   name: {{ name|lower }}
@@ -14,29 +14,29 @@ source:
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . --no-deps -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    - pytest-runner
+    - poetry
   run:
-    - python
-    - flake8 >=2.1
+    - python >=3.6
+    - flake8 >=3.0
     - pycodestyle
     - six
 
 test:
   commands:
-    - "flake8 --version | grep flake8-print:"
+    - 'flake8 --version | grep flake8-print:'
 
 about:
   home: https://github.com/jbkahn/flake8-print
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Flake8 plugin to check for print statements in python files.'
+  summary: Flake8 plugin to check for print statements in python files.
   dev_url: https://github.com/jbkahn/flake8-print
 
 extra:
