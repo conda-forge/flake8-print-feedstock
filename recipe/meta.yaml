@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python
+    - python >=3.6
     - pip
-    - pytest-runner
+    - poetry
   run:
-    - python
-    - flake8 >=2.1
+    - python >=3.6
+    - flake8 >=3.0
     - pycodestyle
     - six
 
