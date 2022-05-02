@@ -34,7 +34,7 @@ about:
   home: https://github.com/jbkahn/flake8-print
   license: MIT
   license_family: MIT
-  license_file: LICENSE
+  license_file: LICENCE
   summary: Flake8 plugin to check for print statements in python files.
   dev_url: https://github.com/jbkahn/flake8-print
 
